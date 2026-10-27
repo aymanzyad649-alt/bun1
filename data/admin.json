@@ -1,0 +1,8 @@
+{
+    "username": "admin",
+    "algorithm": "pbkdf2-sha256",
+    "iterations": 310000,
+    "salt": "4a2db7309c5df048649d7be7a5cb5dc2",
+    "passwordHash": "d3b74798d51f8544f14d66a8f9a88e33c0dcc14b8191b7f1ae5599bdc35b98689d031255fff7a38c14da88ae11a425a51c74d5dc437f17aa51b6ffdb1dc4da5c",
+    "createdAt": "2026-09-28T18:17:52.3390861Z"
+}

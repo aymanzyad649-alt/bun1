@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-ar="20 Coffee | قهوة فاخرة" data-en="20 Coffee | Premium Coffee">بن | قهوة فاخرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" data-ar="مرحباً بكم في متجرنا" data-en="Welcome to our store">
+    مرحباً بكم في متجرنا
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a class="icon-btn search-link" href="#products" title="المنتجات" data-ar-title="المنتجات"
+        data-en-title="Products" aria-label="المنتجات">⌕</a>
+
+      <a href="index.html" class="logo">
+        بن
+        <span>بن الاستازه</span>
+      </a>
+
+      <nav>
+        <a href="#" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#products" data-ar="الكتالوج" data-en="Catalog">الكتالوج</a>
+        <a href="#track-order" data-ar="تتبع طلبك" data-en="Track order">تتبع طلبك</a>
+        <a href="#contact" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang" type="button" aria-label="Switch language">English</button>
+        <button class="icon-btn cart-trigger" type="button" title="السلة" data-ar-title="السلة" data-en-title="Cart"
+          aria-label="السلة">
+          <span aria-hidden="true">▱</span><span class="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker" data-ar="قهوة مختارة بعناية • مذاق يستحق وقتك" data-en="Thoughtfully sourced coffee • made for your best moments">قهوة مختارة بعناية • مذاق يستحق وقتك</p>
+      <h1 data-ar="تصفح أحدث<br>منتجاتنا" data-en="Explore our latest<br>products">تصفح أحدث<br>منتجاتنا</h1>
+      <p class="hero-description" data-ar="من أول رشفة إلى آخر حبة، اكتشف قهوتك المفضلة بتفاصيل صنعت بحب وجودة تليق بك." data-en="From the first sip to the last bean, find your new favorite in coffee crafted with care and quality.">من أول رشفة إلى آخر حبة، اكتشف قهوتك المفضلة بتفاصيل صنعت بحب وجودة تليق بك.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn" data-ar="تسوق الآن" data-en="Shop now">تسوق الآن</a>
+        <a href="#track-order" class="track-order-link" data-ar="تتبع طلبك" data-en="Track an order">تتبع طلبك</a>
+      </div>
+      <div class="hero-points" aria-label="مميزات المتجر">
+        <span data-ar="☕ تحميص طازج" data-en="☕ Freshly roasted">☕ تحميص طازج</span>
+        <span data-ar="✦ جودة مختارة" data-en="✦ Carefully selected">✦ جودة مختارة</span>
+        <span data-ar="♡ مذاق استثنائي" data-en="♡ Exceptional taste">♡ مذاق استثنائي</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80" alt="قهوة فاخرة"
+        data-ar-alt="قهوة فاخرة" data-en-alt="Premium coffee">
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="section-heading">
+      <p class="section-kicker" data-ar="اختيرت لك بعناية" data-en="Curated just for you">اختيرت لك بعناية</p>
+      <h2 class="section-title" data-ar="اكتشف عالم القهوة" data-en="Explore our coffee">اكتشف عالم القهوة</h2>
+      <p class="section-description" data-ar="حبوب ومشروبات مميزة، لكل لحظة مزاجها الخاص." data-en="Distinctive beans and brews for every kind of coffee moment.">حبوب ومشروبات مميزة، لكل لحظة مزاجها الخاص.</p>
+    </div>
+
+    <div class="products-grid">
+      <article class="product-card" data-product-id="espresso">
+        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500&q=80" alt="إسبريسو"
+          data-ar-alt="إسبريسو" data-en-alt="Espresso">
+        <div class="product-info">
+          <h3 data-ar="إسبريسو كلاسيك" data-en="Classic espresso">إسبريسو كلاسيك</h3>
+          <div class="price" data-ar="٨٩ ج.م" data-en="EGP 89">٨٩ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="latte">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80" alt="لاتيه"
+          data-ar-alt="لاتيه" data-en-alt="Latte">
+        <div class="product-info">
+          <h3 data-ar="لاتيه فاخر" data-en="Premium latte">لاتيه فاخر</h3>
+          <div class="price" data-ar="٧٥ ج.م" data-en="EGP 75">٧٥ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="arabica">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&q=80" alt="حبوب"
+          data-ar-alt="حبوب قهوة" data-en-alt="Coffee beans">
+        <div class="product-info">
+          <h3 data-ar="حبوب عربية مختارة" data-en="Selected Arabica beans">حبوب عربية مختارة</h3>
+          <div class="price" data-ar="١٢٠ ج.م" data-en="EGP 120">١٢٠ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="filter-coffee">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="فلتر"
+          data-ar-alt="قهوة فلتر" data-en-alt="Filter coffee">
+        <div class="product-info">
+          <h3 data-ar="قهوة فلتر يومية" data-en="Daily filter coffee">قهوة فلتر يومية</h3>
+          <div class="price" data-ar="٦٥ ج.م" data-en="EGP 65">٦٥ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="cappuccino">
+        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=700&q=85" alt="كابتشينو" data-ar-alt="كابتشينو" data-en-alt="Cappuccino" loading="lazy">
+        <div class="product-info">
+          <span class="product-tag" data-ar="الأكثر طلبًا" data-en="Bestseller">الأكثر طلبًا</span>
+          <h3 data-ar="كابتشينو كريمي" data-en="Velvety cappuccino">كابتشينو كريمي</h3>
+          <p class="product-description" data-ar="إسبريسو غني مع رغوة حليب ناعمة." data-en="Rich espresso finished with silky milk foam.">إسبريسو غني مع رغوة حليب ناعمة.</p>
+          <div class="price" data-ar="٨٢ ج.م" data-en="EGP 82">٨٢ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="mocha">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=700&q=85" alt="موكا" data-ar-alt="موكا بالشوكولاتة" data-en-alt="Chocolate mocha" loading="lazy">
+        <div class="product-info">
+          <span class="product-tag" data-ar="اختيار مميز" data-en="A special pick">اختيار مميز</span>
+          <h3 data-ar="موكا بالشوكولاتة" data-en="Chocolate mocha">موكا بالشوكولاتة</h3>
+          <p class="product-description" data-ar="مزيج متوازن من القهوة والشوكولاتة." data-en="A balanced blend of coffee and chocolate.">مزيج متوازن من القهوة والشوكولاتة.</p>
+          <div class="price" data-ar="٩٥ ج.م" data-en="EGP 95">٩٥ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="cold-brew">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700&q=85" alt="كولد برو" data-ar-alt="قهوة كولد برو" data-en-alt="Cold brew coffee" loading="lazy">
+        <div class="product-info">
+          <span class="product-tag" data-ar="انتعاش اليوم" data-en="Your daily refresh">انتعاش اليوم</span>
+          <h3 data-ar="كولد برو منعش" data-en="Refreshing cold brew">كولد برو منعش</h3>
+          <p class="product-description" data-ar="قهوة باردة بنقع طويل ومذاق ناعم." data-en="Slow-steeped coffee with a smooth finish.">قهوة باردة بنقع طويل ومذاق ناعم.</p>
+          <div class="price" data-ar="٧٨ ج.م" data-en="EGP 78">٧٨ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+      <article class="product-card" data-product-id="dark-roast">
+        <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=700&q=85" alt="تحميص داكن" data-ar-alt="حبوب قهوة بتحميص داكن" data-en-alt="Dark roast coffee beans" loading="lazy">
+        <div class="product-info">
+          <span class="product-tag" data-ar="تحميص خاص" data-en="Special roast">تحميص خاص</span>
+          <h3 data-ar="حبوب التحميص الداكن" data-en="Dark roast beans">حبوب التحميص الداكن</h3>
+          <p class="product-description" data-ar="نكهات عميقة ولمسة غنية تدوم." data-en="Deep notes and a rich, lingering finish.">نكهات عميقة ولمسة غنية تدوم.</p>
+          <div class="price" data-ar="١٣٥ ج.م" data-en="EGP 135">١٣٥ ج.م</div>
+          <button class="add-to-cart" type="button" data-ar="أضف للسلة" data-en="Add to cart">أضف للسلة</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="order-tracking" id="track-order">
+    <div class="tracking-intro">
+      <p class="section-kicker" data-ar="طلبك في كل خطوة" data-en="Here for every step">طلبك في كل خطوة</p>
+      <h2 data-ar="تتبع طلبك" data-en="Track your order">تتبع طلبك</h2>
+      <p data-ar="أدخل رقم الطلب ورقم الهاتف المستخدم عند الشراء لمشاهدة آخر تحديث." data-en="Enter your order number and the phone number used at checkout to see the latest update.">أدخل رقم الطلب ورقم الهاتف المستخدم عند الشراء لمشاهدة آخر تحديث.</p>
+    </div>
+    <form class="tracking-form">
+      <label>
+        <span data-ar="رقم الطلب" data-en="Order number">رقم الطلب</span>
+        <input name="orderId" required maxlength="40" autocomplete="off" dir="ltr" placeholder="ORD-..." data-ar-placeholder="مثال: ORD-..." data-en-placeholder="Example: ORD-...">
+      </label>
+      <label>
+        <span data-ar="رقم الهاتف المصري" data-en="Egyptian phone number">رقم الهاتف المصري</span>
+        <input name="phone" required type="tel" inputmode="tel" autocomplete="tel" maxlength="30" dir="ltr" placeholder="01xxxxxxxxx" data-ar-placeholder="مثال: 01xxxxxxxxx" data-en-placeholder="Example: 01xxxxxxxxx">
+      </label>
+      <button class="tracking-submit" type="submit" data-ar="عرض حالة الطلب" data-en="Check order status">عرض حالة الطلب</button>
+    </form>
+    <p class="tracking-message" role="alert"></p>
+    <section class="tracking-result" aria-live="polite" hidden></section>
+  </section>
+
+  <div class="cart-backdrop" hidden></div>
+  <aside class="cart-panel" aria-label="السلة" aria-hidden="true">
+    <div class="cart-heading">
+      <h2 data-ar="سلة المشتريات" data-en="Your cart">سلة المشتريات</h2>
+      <button class="close-cart icon-btn" type="button" aria-label="إغلاق">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <p><span data-ar="الإجمالي" data-en="Total">الإجمالي</span><strong class="cart-total">0 ج.م</strong></p>
+      <p class="cart-feedback" role="status"></p>
+      <button class="checkout-button" type="button" data-ar="تأكيد الطلب" data-en="Place order">تأكيد
+        الطلب</button>
+    </div>
+  </aside>
+
+  <dialog class="checkout-dialog">
+    <form class="checkout-form">
+      <div class="cart-heading">
+        <h2 data-ar="بيانات استلام الطلب" data-en="Delivery details">بيانات استلام الطلب</h2>
+        <button class="close-checkout icon-btn" type="button" aria-label="إغلاق">×</button>
+      </div>
+      <label><span data-ar="الاسم" data-en="Name">الاسم</span><input name="name" required autocomplete="name"
+          maxlength="100"></label>
+      <label><span data-ar="رقم الهاتف المصري" data-en="Egyptian phone number">رقم الهاتف المصري</span><input name="phone" required type="tel"
+          inputmode="tel" autocomplete="tel" maxlength="30" dir="ltr" placeholder="01xxxxxxxxx" data-ar-placeholder="مثال: 01xxxxxxxxx" data-en-placeholder="Example: 01xxxxxxxxx"></label>
+      <label><span data-ar="عنوان الاستلام" data-en="Delivery address">عنوان الاستلام</span><textarea name="address"
+          required rows="3" maxlength="500"></textarea></label>
+      <label><span data-ar="ملاحظات (اختياري)" data-en="Notes (optional)">ملاحظات (اختياري)</span><textarea name="notes"
+          rows="2" maxlength="500"></textarea></label>
+      <p class="checkout-error" role="alert"></p>
+      <button class="checkout-submit" type="submit" data-ar="إرسال الطلب" data-en="Submit order">إرسال الطلب</button>
+    </form>
+  </dialog>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3 data-ar="بن الاستازة" data-en="Al Ostaza Coffee">بن الاستازة</h3>
+        <p data-ar="نقدم لكم أجود أنواع القهوة المختارة بعناية من أفضل المزارع حول العالم. تجربة فاخرة في كل فنجان."
+          data-en="We bring you carefully selected coffee from the finest farms around the world. A premium experience in every cup.">
+          نقدم لكم أجود أنواع القهوة المختارة بعناية من أفضل المزارع حول العالم. تجربة فاخرة في كل فنجان.</p>
+      </div>
+
+      <div class="footer-col" id="contact">
+        <h4 data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</h4>
+        <a href="#" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="#" data-ar="الكتالوج" data-en="Catalog">الكتالوج</a>
+        <a href="#" data-ar="من نحن" data-en="About us">من نحن</a>
+        <a href="#" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a>
+        <a href="#track-order" data-ar="تتبع طلبك" data-en="Track an order">تتبع طلبك</a>
+        <a href="admin.html">إدارة الطلبات</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-ar="المساعدة" data-en="Help">المساعدة</h4>
+        <a href="#" data-ar="سياسة الشحن" data-en="Shipping policy">سياسة الشحن</a>
+        <a href="#" data-ar="الإرجاع" data-en="Returns">الإرجاع</a>
+        <a href="#" data-ar="الأسئلة الشائعة" data-en="FAQs">الأسئلة الشائعة</a>
+        <a href="#" data-ar="الدعم" data-en="Support">الدعم</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-ar="تواصل" data-en="Contact">تواصل</h4>
+        <a href="#">elzozaym@gmail.com</a>
+        <a href="https://wa.me/201013103189">+201013103189</a>
+        <a href="#" data-ar="مصر، الدقهلية" data-en="Dakahlia, Egypt">مصر، الدقهلية</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span data-ar="© 2026 بن الاستازة. جميع الحقوق محفوظة." data-en="© 2026 Al Ostaza Coffee. All rights reserved.">©
+        2026 بن الاستازة. جميع الحقوق محفوظة.</span>
+    </div>
+  </footer>
+
+  <script>
+    const languageButton = document.querySelector('.lang');
+    const savedLanguage = localStorage.getItem('site-language') || 'ar';
+
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('[data-ar][data-en]').forEach((element) => {
+        element.innerHTML = element.dataset[language];
+      });
+      document.querySelectorAll('[data-ar-title][data-en-title]').forEach((element) => {
+        element.title = element.dataset[`${language}Title`];
+      });
+      document.querySelectorAll('[data-ar-placeholder][data-en-placeholder]').forEach((element) => {
+        element.placeholder = element.dataset[`${language}Placeholder`];
+      });
+      document.querySelectorAll('[data-ar-alt]').forEach((element) => {
+        const alt = element.dataset[`${language}Alt`];
+        if (alt) element.alt = alt;
+      });
+      languageButton.textContent = language === 'ar' ? 'English' : 'العربية';
+      languageButton.setAttribute('aria-label', language === 'ar' ? 'Switch to English' : 'التبديل إلى العربية');
+      localStorage.setItem('site-language', language);
+      if (typeof renderCart === 'function') renderCart();
+    }
+
+    languageButton.addEventListener('click', () => {
+      setLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+    });
+
+    setLanguage(savedLanguage);
+  </script>
+  <script src="store.js" defer></script>
+</body>
+
+</html>

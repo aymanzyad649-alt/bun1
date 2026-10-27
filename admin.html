@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>إدارة الطلبات | بن الاستازة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="admin-page">
+    <header class="admin-topbar">
+        <a class="admin-brand" href="index.html">بن الاستازة | الإدارة</a>
+        <a href="index.html">العودة للمتجر</a>
+    </header>
+
+    <main class="admin-shell">
+        <section class="admin-auth" id="auth-panel">
+            <h1 id="auth-title">إعداد حساب الإدارة</h1>
+            <p id="auth-description">أنشئ حساب المسؤول الأول لمتابعة الطلبات.</p>
+            <form id="auth-form">
+                <label>اسم المستخدم<input name="username" autocomplete="username" minlength="3" maxlength="40"
+                        required></label>
+                <label>كلمة المرور<input name="password" type="password" autocomplete="new-password" minlength="12"
+                        required></label>
+                <p class="admin-message" id="auth-message" role="alert"></p>
+                <button class="admin-button primary" id="auth-submit" type="submit">إنشاء الحساب</button>
+            </form>
+        </section>
+
+        <section id="dashboard" class="admin-hidden">
+            <div class="admin-title-row">
+                <div>
+                    <h1>متابعة الطلبات</h1>
+                    <p id="last-updated" aria-live="polite"></p>
+                </div>
+                <div>
+                    <select id="status-filter" class="admin-filter" aria-label="تصفية حسب الحالة">
+                        <option value="all">كل الطلبات</option>
+                        <option value="new">جديد</option>
+                        <option value="confirmed">تم التأكيد</option>
+                        <option value="preparing">قيد التجهيز</option>
+                        <option value="delivered">تم التسليم</option>
+                        <option value="cancelled">ملغي</option>
+                    </select>
+                    <button class="admin-button" id="refresh-orders" type="button">تحديث</button>
+                    <button class="admin-button" id="logout" type="button">تسجيل الخروج</button>
+                </div>
+            </div>
+            <p class="admin-message" id="dashboard-message" role="alert"></p>
+            <div class="admin-table-wrap">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>رقم الطلب / الوقت</th>
+                            <th>العميل</th>
+                            <th>المنتجات</th>
+                            <th>الإجمالي</th>
+                            <th>الحالة</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="admin.js" defer></script>
+</body>
+
+</html>
